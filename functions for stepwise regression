@@ -67,7 +67,7 @@ stepwise_to_null_models <- function(formula, family = gaussian, data) {
 
 
 
-# function for calculating delta AIC
+# function for calculating delta AIC from null model
 
 calculate_delta_aic <- function(models, null_model) {
         # Extract the null model AIC
@@ -160,7 +160,7 @@ extract_model_info <- function(model, model_name, delta_aic) {
 }
 
 
-# function for calculating  Delta AIC
+# function for calculating  Delta AIC for the min model
 calculate_delta_aic <- function(models) {
         # Extract AIC values for all models
         aic_values <- sapply(models, AIC)
